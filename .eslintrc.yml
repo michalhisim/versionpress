@@ -5,12 +5,6 @@ env:
   - mocha
 extends:
   - "eslint:recommended"
-ignorePattern:
-  - "**/*.min.*"
-  - "vendor/*"
-  - "**/node_modules/*"
-  - "**/bower_components/*"
-  - "frontend/webpack/*" # irelevant issues
 rules:
   brace-style:
     - warn
