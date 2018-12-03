@@ -1,21 +1,56 @@
-env:
-  es6: true
-  node: true
-  mocha: true
-parser: "babel-eslint"
+---
+envs:
+  - browser
+  - mocha
 extends:
-  - eslint:recommended
-  - plugin:flowtype/recommended
+  - "eslint:recommended"
+ignorePattern:
+  - "**/*.min.*"
+  - vendor/*
+  - "**/node_modules/*"
+  - "**/bower_components/*"
 rules:
+  brace-style:
+    - warn
+    - 1tbs
+  camelcase: warn
+  comma-dangle:
+    - warn
+    - always-multiline
+  comma-style:
+    - error
+    - last
+  complexity: error
+  curly: warn
+  eol-last:
+    - error
+    - always
+#  id-blacklist:
+#    - error
+#    - data
+  id-length: error
+  max-lines: error
+  max-params:
+    - error
+    - 4
+#  max-statements:
+#    - error
+#    - 10
+  no-duplicate-imports: error
+  no-eq-null: error
+  no-eval: error
+  no-implied-eval: error
+  no-invalid-this: error
+  no-shadow: error
+  no-undefined: error
+#  no-use-before-define: error
   no-warning-comments:
-    - 1
-    - { "terms": ["todo", "fixme"], "location": "anywhere" }
-  brace-style: [1, '1tbs']
-parserOptions:
-  ecmaVersion: 6
-  sourceType: "module"
-  ecmaFeatures:
-    classes: true
-    experimentalObjectRestSpread : true
-plugins:
-  - flowtype
+    - warn
+    -
+      location: anywhere
+      terms:
+        - todo
+        - fixme
+  prefer-promise-reject-errors: error
+  semi: error
+useEslintrc: false
