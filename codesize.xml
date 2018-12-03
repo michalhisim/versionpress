@@ -11,7 +11,7 @@
     <rule ref="rulesets/naming.xml/ShortVariable">
         <properties>
             <!-- $to is perfectly descriptive with `wp_mail()`. -->
-            <property name="exceptions" value="to,wp" />
+            <property name="exceptions" value="to,wp,db" />
         </properties>
     </rule>
     
