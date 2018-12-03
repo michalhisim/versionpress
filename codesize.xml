@@ -16,7 +16,12 @@
     </rule>
     
     <rule ref="rulesets/codesize.xml" />
-    <rule ref="rulesets/design.xml" />
+    
+    <rule ref="rulesets/design.xml">
+		<!-- There are proper cases for this, like exit()'ing after a redirect -->
+		<exclude name="ExitExpression" />
+	</rule>
+    
     <!-- is a non-starter, because camelCase is inconsistent with the WP Coding Standards,
 	     and requiring a framework to access superglobals overkill. -->
     <!--rule ref="rulesets/controversial.xml" /-->
