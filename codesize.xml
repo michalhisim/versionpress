@@ -17,6 +17,7 @@
     
     <rule ref="rulesets/codesize.xml" />
     <rule ref="rulesets/design.xml" />
-    <rule ref="rulesets/controversial.xml" />
-    <!-- ... -->
+    <!-- is a non-starter, because camelCase is inconsistent with the WP Coding Standards,
+	     and requiring a framework to access superglobals overkill. -->
+    <!--rule ref="rulesets/controversial.xml" /-->
 </ruleset>
