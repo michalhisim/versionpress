@@ -10,6 +10,7 @@ ignorePattern:
   - "**/node_modules/*"
   - "**/bower_components/*"
   - "frontend/webpack/*" # irelevant issues
+  - "plugins/versionpress/admin/public/js/jquery.webui-popover.min.js" # 3rd party
 rules:
   brace-style:
     - warn
