@@ -1,8 +1,7 @@
 ---
 extends: "tslint:recommended"
 rules:
-  max-line-length:
-    [true, 120]
+  max-line-length: [true, 120]
   new-parens: true
   quotemark: [true, "single", "jsx-double"]
   no-arg: true
@@ -19,5 +18,4 @@ rules:
     - timeEnd
     - trace
 jsRules:
-  max-line-length:
-    options: [120]
+  max-line-length: [true, 120]
