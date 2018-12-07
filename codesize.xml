@@ -6,7 +6,10 @@
     <description>PHPMD Rules</description>
 
     <rule ref="rulesets/unusedcode.xml" />
-    <rule ref="rulesets/naming.xml" />
+    <rule ref="rulesets/naming.xml">
+		<!-- Variable names should be descriptive and self-documenting -->
+		<exclude name="LongVariable" />
+	</rule>
     
     <rule ref="rulesets/naming.xml/ShortVariable">
         <properties>
